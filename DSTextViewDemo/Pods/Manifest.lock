@@ -1,0 +1,23 @@
+PODS:
+  - DSBase (1.0.1)
+  - DSTextView (1.0.0):
+    - DSBase
+
+DEPENDENCIES:
+  - DSTextView (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DSBase
+
+EXTERNAL SOURCES:
+  DSTextView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DSBase: 20e7d49cef125bc7b2225f78b1e269f4ef1594bc
+  DSTextView: 88b36941a22be124b5a0ff344d1c9b0a1a2865e7
+
+PODFILE CHECKSUM: 66ff4f6ff61ea1724352632862c5270abc673cf8
+
+COCOAPODS: 1.10.0

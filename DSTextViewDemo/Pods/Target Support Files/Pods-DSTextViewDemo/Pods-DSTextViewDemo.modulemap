@@ -1,0 +1,6 @@
+framework module Pods_DSTextViewDemo {
+  umbrella header "Pods-DSTextViewDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

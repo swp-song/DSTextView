@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DSBase/DSBase.framework
+${BUILT_PRODUCTS_DIR}/DSTextView/DSTextView.framework
