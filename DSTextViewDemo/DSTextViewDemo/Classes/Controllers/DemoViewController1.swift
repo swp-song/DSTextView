@@ -7,11 +7,20 @@
 
 import UIKit
 
+import SnapKit
+import DSTextView
+
 class DemoViewController1: BaseViewController {
 
+    
+    var textView: DSTextView = {
+        let textView: DSTextView = DSTextView()
+        return textView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUI()
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +35,18 @@ class DemoViewController1: BaseViewController {
     }
     */
 
+}
+
+
+extension DemoViewController1 {
+    func setUI() -> Void {
+        view.addSubview(textView)
+        textView.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view)
+            make.left.right.equalTo(self.view).inset(UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10))
+            make.width.equalTo(self.textView.snp.height).multipliedBy(2.0)
+        }
+        
+        textView.ds.layer.borderWidth = 1
+    }
 }

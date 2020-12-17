@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4C6932F56FEF53A2A16B45D9 /* Pods_DSTextViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8BF3B4B4724620F0093D01 /* Pods_DSTextViewDemo.framework */; };
+		F143C822258B9C8D0015ED16 /* DemoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143C821258B9C8D0015ED16 /* DemoViewController2.swift */; };
+		F143C825258B9C9B0015ED16 /* DemoViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143C824258B9C9B0015ED16 /* DemoViewController3.swift */; };
+		F143C828258B9CAD0015ED16 /* DemoViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143C827258B9CAD0015ED16 /* DemoViewController4.swift */; };
+		F143C830258BA5AA0015ED16 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F143C82F258BA5AA0015ED16 /* CustomView.swift */; };
 		F1891170258B5D4100476EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189116F258B5D4100476EDD /* AppDelegate.swift */; };
 		F1891172258B5D4100476EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1891171258B5D4100476EDD /* SceneDelegate.swift */; };
 		F1891174258B5D4100476EDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1891173258B5D4100476EDD /* ViewController.swift */; };
@@ -23,6 +27,10 @@
 		03ED3269A7A1D5257A5F13B8 /* Pods-DSTextViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		881B1F0FFD19E77EC09DED2B /* Pods-DSTextViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.release.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EB8BF3B4B4724620F0093D01 /* Pods_DSTextViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSTextViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F143C821258B9C8D0015ED16 /* DemoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController2.swift; sourceTree = "<group>"; };
+		F143C824258B9C9B0015ED16 /* DemoViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController3.swift; sourceTree = "<group>"; };
+		F143C827258B9CAD0015ED16 /* DemoViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController4.swift; sourceTree = "<group>"; };
+		F143C82F258BA5AA0015ED16 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		F189116C258B5D4100476EDD /* DSTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F189116F258B5D4100476EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1891171258B5D4100476EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +73,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F143C82E258BA5850015ED16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F143C82F258BA5AA0015ED16 /* CustomView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F1891163258B5D4100476EDD = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F189118B258B624F00476EDD /* Controllers */,
-				F1891190258B624F00476EDD /* Views */,
+				F143C82E258BA5850015ED16 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -113,15 +129,11 @@
 				F189118D258B624F00476EDD /* BaseViewController.swift */,
 				F189118E258B624F00476EDD /* RootViewController.swift */,
 				F189118F258B624F00476EDD /* DemoViewController1.swift */,
+				F143C821258B9C8D0015ED16 /* DemoViewController2.swift */,
+				F143C824258B9C9B0015ED16 /* DemoViewController3.swift */,
+				F143C827258B9CAD0015ED16 /* DemoViewController4.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		F1891190258B624F00476EDD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1891192258B625000476EDD /* BaseViewController.swift in Sources */,
+				F143C822258B9C8D0015ED16 /* DemoViewController2.swift in Sources */,
+				F143C828258B9CAD0015ED16 /* DemoViewController4.swift in Sources */,
 				F1891174258B5D4100476EDD /* ViewController.swift in Sources */,
+				F143C825258B9C9B0015ED16 /* DemoViewController3.swift in Sources */,
+				F143C830258BA5AA0015ED16 /* CustomView.swift in Sources */,
 				F1891193258B625000476EDD /* RootViewController.swift in Sources */,
 				F1891170258B5D4100476EDD /* AppDelegate.swift in Sources */,
 				F1891172258B5D4100476EDD /* SceneDelegate.swift in Sources */,

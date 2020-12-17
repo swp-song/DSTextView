@@ -1,24 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NGe-oh-R6o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="XcD-NN-dfI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <navigationController id="NGe-oh-R6o" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yti-9Y-Ca9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4LM-fK-fxE" kind="relationship" relationship="rootViewController" id="2uB-ip-xPo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrr-KG-ely" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1930" y="85"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="g6Z-ke-2mF">
+            <objects>
+                <viewController id="4LM-fK-fxE" customClass="RootViewController" customModule="DSTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Rb-gA-re1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv6-nd-iI9" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="10" y="238" width="394" height="39.5"/>
+                                <color key="backgroundColor" red="0.18941465020000001" green="0.88969188929999998" blue="0.99967700240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pv6-nd-iI9" secondAttribute="height" multiplier="10:1" id="tBa-gV-SkX"/>
+                                </constraints>
+                                <state key="normal" title="This is the DSTextView created by xib">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zwW-vZ-7Zi" kind="showDetail" id="G2w-uW-pwa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHv-5r-Wfi" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="10" y="317.5" width="394" height="39.5"/>
+                                <color key="backgroundColor" red="0.18941465020000001" green="0.88969188929999998" blue="0.99967700240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dHv-5r-Wfi" secondAttribute="height" multiplier="10:1" id="Tqz-cv-URv"/>
+                                </constraints>
+                                <state key="normal" title="This is the DSTextView created by code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3pK-4i-II8" kind="showDetail" id="6LO-F0-Xb1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJb-hF-qV0" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="10" y="397" width="394" height="39"/>
+                                <color key="backgroundColor" red="0.18941465020000001" green="0.88969188929999998" blue="0.99967700240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WJb-hF-qV0" secondAttribute="height" multiplier="10:1" id="wBV-D6-eS6"/>
+                                </constraints>
+                                <state key="normal" title="This is the CustomTextView created by xib">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uhU-28-5HN" kind="showDetail" id="LF1-XB-LJl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-7Z-Nov" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="10" y="476" width="394" height="39.5"/>
+                                <color key="backgroundColor" red="0.18941465020000001" green="0.88969188929999998" blue="0.99967700240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cd1-7Z-Nov" secondAttribute="height" multiplier="10:1" id="HUT-x4-CmG"/>
+                                </constraints>
+                                <state key="normal" title="This is the CustomTextView created by code">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gP5-AZ-ZAP" kind="showDetail" id="DJW-5z-z79"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JxE-BW-yWm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JxE-BW-yWm" firstAttribute="trailing" secondItem="cd1-7Z-Nov" secondAttribute="trailing" constant="10" id="1t3-sV-nke"/>
+                            <constraint firstItem="dHv-5r-Wfi" firstAttribute="leading" secondItem="pv6-nd-iI9" secondAttribute="leading" id="6SR-a3-TRE"/>
+                            <constraint firstItem="WJb-hF-qV0" firstAttribute="leading" secondItem="dHv-5r-Wfi" secondAttribute="leading" id="LKL-Zx-QN3"/>
+                            <constraint firstItem="cd1-7Z-Nov" firstAttribute="leading" secondItem="JxE-BW-yWm" secondAttribute="leading" constant="10" id="SE7-vS-gFI"/>
+                            <constraint firstItem="dHv-5r-Wfi" firstAttribute="trailing" secondItem="pv6-nd-iI9" secondAttribute="trailing" id="Xul-Xz-W3V"/>
+                            <constraint firstItem="cd1-7Z-Nov" firstAttribute="top" secondItem="WJb-hF-qV0" secondAttribute="bottom" constant="40" id="cCw-iV-hqa"/>
+                            <constraint firstItem="dHv-5r-Wfi" firstAttribute="top" secondItem="pv6-nd-iI9" secondAttribute="bottom" constant="40" id="cOj-Ap-jAS"/>
+                            <constraint firstItem="pv6-nd-iI9" firstAttribute="top" secondItem="JxE-BW-yWm" secondAttribute="top" constant="150" id="j8V-E5-chb"/>
+                            <constraint firstItem="WJb-hF-qV0" firstAttribute="trailing" secondItem="dHv-5r-Wfi" secondAttribute="trailing" id="lU7-eu-aBS"/>
+                            <constraint firstItem="JxE-BW-yWm" firstAttribute="trailing" secondItem="pv6-nd-iI9" secondAttribute="trailing" constant="10" id="qzw-aX-cee"/>
+                            <constraint firstItem="WJb-hF-qV0" firstAttribute="top" secondItem="dHv-5r-Wfi" secondAttribute="bottom" constant="40" id="wsm-kI-T2y"/>
+                            <constraint firstItem="pv6-nd-iI9" firstAttribute="leading" secondItem="JxE-BW-yWm" secondAttribute="leading" constant="10" id="xu9-pt-YaF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AGr-fr-2tD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeT-Df-Prh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-962.31884057971024" y="61.607142857142854"/>
+        </scene>
+        <!--Demo View Controller1-->
+        <scene sceneID="0pf-bt-LFn">
+            <objects>
+                <viewController id="zwW-vZ-7Zi" customClass="DemoViewController1" customModule="DSTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mbU-8n-tOT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7jA-1E-1jI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhe-6Y-PIU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-197" y="-581"/>
+        </scene>
+        <!--Demo View Controller2-->
+        <scene sceneID="ePT-jN-sU9">
+            <objects>
+                <viewController id="3pK-4i-II8" customClass="DemoViewController2" customModule="DSTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exP-b7-y78">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tkz-sT-BQO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vo4-55-yQH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="84"/>
+        </scene>
+        <!--Demo View Controller3-->
+        <scene sceneID="ltY-CW-pCb">
+            <objects>
+                <viewController id="uhU-28-5HN" customClass="DemoViewController3" customModule="DSTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlT-12-EN5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kOd-AV-WWA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Hj-PA-oHE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1365" y="979"/>
+        </scene>
+        <!--Demo View Controller4-->
+        <scene sceneID="MqD-eF-0kW">
+            <objects>
+                <viewController id="gP5-AZ-ZAP" customClass="DemoViewController4" customModule="DSTextViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2jK-wj-yVs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3xg-gZ-Asv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ri7-JZ-qz1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nJS-pl-ulK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-548" y="978"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

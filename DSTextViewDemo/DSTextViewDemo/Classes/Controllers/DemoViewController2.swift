@@ -1,5 +1,5 @@
 //
-//  RootViewController.swift
+//  DemoViewController2.swift
 //  DSTextViewDemo
 //
 //  Created by Dream on 2020/12/17.
@@ -7,14 +7,12 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class DemoViewController2: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        self.navigationItem.title = "DSTextViewDemo"
     }
     
 
