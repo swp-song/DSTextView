@@ -1,13 +1,15 @@
 //
 //  DSTextView.swift
-//  DSTextViewDemo
+//  DSTextView
 //
-//  Created by Dream on 2020/12/15.
+//  Created by Dream on 2020/12/17.
 //
 
 import UIKit
 
-class DSTextView: UITextView {
+import DSBase
+
+open class DSTextView: UITextView {
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -17,4 +19,29 @@ class DSTextView: UITextView {
     }
     */
 
+    public override init(frame: CGRect, textContainer: NSTextContainer?) {
+        super.init(frame: frame, textContainer: textContainer)
+    }
+    
+    required public init?(coder: NSCoder) {
+        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
+
+
+public extension DS where DSBase: DSTextView {
+    
+    var text: String { self.ds.text }
+}
+
+
+
+extension DS where DSBase: DSTextView {
+    
+}
+
+
+
+extension DSTextView: DSCompatible { }

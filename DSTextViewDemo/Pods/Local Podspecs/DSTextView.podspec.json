@@ -20,7 +20,7 @@
   },
   "source_files": [
     "DSTextView",
-    "DSTextView/**/*.{swift}"
+    "DSTextView/**/*.swift"
   ],
   "frameworks": "UIKit",
   "dependencies": {

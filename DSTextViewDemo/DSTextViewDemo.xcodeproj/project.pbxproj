@@ -3,107 +3,139 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBCF8461F8DC5D2FE234C895 /* Pods_DSTextViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBC5F02BDD81B0098BE69A0 /* Pods_DSTextViewDemo.framework */; };
-		F133C12A258897F800658C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133C129258897F800658C23 /* AppDelegate.swift */; };
-		F133C12C258897F800658C23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133C12B258897F800658C23 /* SceneDelegate.swift */; };
-		F133C12E258897F800658C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133C12D258897F800658C23 /* ViewController.swift */; };
-		F133C131258897F800658C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F133C12F258897F800658C23 /* Main.storyboard */; };
-		F133C133258897FA00658C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F133C132258897FA00658C23 /* Assets.xcassets */; };
-		F133C136258897FA00658C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F133C134258897FA00658C23 /* LaunchScreen.storyboard */; };
+		4C6932F56FEF53A2A16B45D9 /* Pods_DSTextViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8BF3B4B4724620F0093D01 /* Pods_DSTextViewDemo.framework */; };
+		F1891170258B5D4100476EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189116F258B5D4100476EDD /* AppDelegate.swift */; };
+		F1891172258B5D4100476EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1891171258B5D4100476EDD /* SceneDelegate.swift */; };
+		F1891174258B5D4100476EDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1891173258B5D4100476EDD /* ViewController.swift */; };
+		F1891177258B5D4100476EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1891175258B5D4100476EDD /* Main.storyboard */; };
+		F1891179258B5D4100476EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1891178258B5D4100476EDD /* Assets.xcassets */; };
+		F189117C258B5D4100476EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F189117A258B5D4100476EDD /* LaunchScreen.storyboard */; };
+		F1891192258B625000476EDD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189118D258B624F00476EDD /* BaseViewController.swift */; };
+		F1891193258B625000476EDD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189118E258B624F00476EDD /* RootViewController.swift */; };
+		F1891194258B625000476EDD /* DemoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F189118F258B624F00476EDD /* DemoViewController1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7CBC5F02BDD81B0098BE69A0 /* Pods_DSTextViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSTextViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		89C235429FED5F6A40E72086 /* Pods-DSTextViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.release.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CC0FE7C47C3253B4A6C664C1 /* Pods-DSTextViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		F133C126258897F800658C23 /* DSTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F133C129258897F800658C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F133C12B258897F800658C23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F133C12D258897F800658C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F133C130258897F800658C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F133C132258897FA00658C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F133C135258897FA00658C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F133C137258897FA00658C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ED3269A7A1D5257A5F13B8 /* Pods-DSTextViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		881B1F0FFD19E77EC09DED2B /* Pods-DSTextViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSTextViewDemo.release.xcconfig"; path = "Target Support Files/Pods-DSTextViewDemo/Pods-DSTextViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EB8BF3B4B4724620F0093D01 /* Pods_DSTextViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSTextViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F189116C258B5D4100476EDD /* DSTextViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSTextViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F189116F258B5D4100476EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1891171258B5D4100476EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1891173258B5D4100476EDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1891176258B5D4100476EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1891178258B5D4100476EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F189117B258B5D4100476EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F189117D258B5D4100476EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F189118D258B624F00476EDD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F189118E258B624F00476EDD /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F189118F258B624F00476EDD /* DemoViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F133C123258897F800658C23 /* Frameworks */ = {
+		F1891169258B5D4100476EDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCF8461F8DC5D2FE234C895 /* Pods_DSTextViewDemo.framework in Frameworks */,
+				4C6932F56FEF53A2A16B45D9 /* Pods_DSTextViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BCB8F86DB846EDBF3AD09369 /* Frameworks */ = {
+		1421EAB4894910FE96CB74A9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CBC5F02BDD81B0098BE69A0 /* Pods_DSTextViewDemo.framework */,
+				03ED3269A7A1D5257A5F13B8 /* Pods-DSTextViewDemo.debug.xcconfig */,
+				881B1F0FFD19E77EC09DED2B /* Pods-DSTextViewDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A204C847B190B369FE0AFA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB8BF3B4B4724620F0093D01 /* Pods_DSTextViewDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F133C11D258897F800658C23 = {
+		F1891163258B5D4100476EDD = {
 			isa = PBXGroup;
 			children = (
-				F133C128258897F800658C23 /* DSTextViewDemo */,
-				F133C127258897F800658C23 /* Products */,
-				F724CB5E09701F6A68414938 /* Pods */,
-				BCB8F86DB846EDBF3AD09369 /* Frameworks */,
+				F189116E258B5D4100476EDD /* DSTextViewDemo */,
+				F189116D258B5D4100476EDD /* Products */,
+				1421EAB4894910FE96CB74A9 /* Pods */,
+				8A204C847B190B369FE0AFA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F133C127258897F800658C23 /* Products */ = {
+		F189116D258B5D4100476EDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F133C126258897F800658C23 /* DSTextViewDemo.app */,
+				F189116C258B5D4100476EDD /* DSTextViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F133C128258897F800658C23 /* DSTextViewDemo */ = {
+		F189116E258B5D4100476EDD /* DSTextViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F133C129258897F800658C23 /* AppDelegate.swift */,
-				F133C12B258897F800658C23 /* SceneDelegate.swift */,
-				F133C12D258897F800658C23 /* ViewController.swift */,
-				F133C12F258897F800658C23 /* Main.storyboard */,
-				F133C132258897FA00658C23 /* Assets.xcassets */,
-				F133C134258897FA00658C23 /* LaunchScreen.storyboard */,
-				F133C137258897FA00658C23 /* Info.plist */,
+				F189118A258B624F00476EDD /* Classes */,
+				F189116F258B5D4100476EDD /* AppDelegate.swift */,
+				F1891171258B5D4100476EDD /* SceneDelegate.swift */,
+				F1891173258B5D4100476EDD /* ViewController.swift */,
+				F1891175258B5D4100476EDD /* Main.storyboard */,
+				F1891178258B5D4100476EDD /* Assets.xcassets */,
+				F189117A258B5D4100476EDD /* LaunchScreen.storyboard */,
+				F189117D258B5D4100476EDD /* Info.plist */,
 			);
 			path = DSTextViewDemo;
 			sourceTree = "<group>";
 		};
-		F724CB5E09701F6A68414938 /* Pods */ = {
+		F189118A258B624F00476EDD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CC0FE7C47C3253B4A6C664C1 /* Pods-DSTextViewDemo.debug.xcconfig */,
-				89C235429FED5F6A40E72086 /* Pods-DSTextViewDemo.release.xcconfig */,
+				F189118B258B624F00476EDD /* Controllers */,
+				F1891190258B624F00476EDD /* Views */,
 			);
-			name = Pods;
-			path = Pods;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F189118B258B624F00476EDD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F189118D258B624F00476EDD /* BaseViewController.swift */,
+				F189118E258B624F00476EDD /* RootViewController.swift */,
+				F189118F258B624F00476EDD /* DemoViewController1.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1891190258B624F00476EDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F133C125258897F800658C23 /* DSTextViewDemo */ = {
+		F189116B258B5D4100476EDD /* DSTextViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F133C13A258897FA00658C23 /* Build configuration list for PBXNativeTarget "DSTextViewDemo" */;
+			buildConfigurationList = F1891180258B5D4100476EDD /* Build configuration list for PBXNativeTarget "DSTextViewDemo" */;
 			buildPhases = (
-				B8658CAB1A15714CFC262321 /* [CP] Check Pods Manifest.lock */,
-				F133C122258897F800658C23 /* Sources */,
-				F133C123258897F800658C23 /* Frameworks */,
-				F133C124258897F800658C23 /* Resources */,
-				BF436517ECCD3AF45E6E6F51 /* [CP] Embed Pods Frameworks */,
+				3E1093658DD0B775D771FBF9 /* [CP] Check Pods Manifest.lock */,
+				F1891168258B5D4100476EDD /* Sources */,
+				F1891169258B5D4100476EDD /* Frameworks */,
+				F189116A258B5D4100476EDD /* Resources */,
+				A5E0AAAFA309AFE261CA1008 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,24 +143,24 @@
 			);
 			name = DSTextViewDemo;
 			productName = DSTextViewDemo;
-			productReference = F133C126258897F800658C23 /* DSTextViewDemo.app */;
+			productReference = F189116C258B5D4100476EDD /* DSTextViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F133C11E258897F800658C23 /* Project object */ = {
+		F1891164258B5D4100476EDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					F133C125258897F800658C23 = {
-						CreatedOnToolsVersion = 12.2;
+					F189116B258B5D4100476EDD = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = F133C121258897F800658C23 /* Build configuration list for PBXProject "DSTextViewDemo" */;
+			buildConfigurationList = F1891167258B5D4100476EDD /* Build configuration list for PBXProject "DSTextViewDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,31 +168,31 @@
 				en,
 				Base,
 			);
-			mainGroup = F133C11D258897F800658C23;
-			productRefGroup = F133C127258897F800658C23 /* Products */;
+			mainGroup = F1891163258B5D4100476EDD;
+			productRefGroup = F189116D258B5D4100476EDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F133C125258897F800658C23 /* DSTextViewDemo */,
+				F189116B258B5D4100476EDD /* DSTextViewDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F133C124258897F800658C23 /* Resources */ = {
+		F189116A258B5D4100476EDD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F133C136258897FA00658C23 /* LaunchScreen.storyboard in Resources */,
-				F133C133258897FA00658C23 /* Assets.xcassets in Resources */,
-				F133C131258897F800658C23 /* Main.storyboard in Resources */,
+				F189117C258B5D4100476EDD /* LaunchScreen.storyboard in Resources */,
+				F1891179258B5D4100476EDD /* Assets.xcassets in Resources */,
+				F1891177258B5D4100476EDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B8658CAB1A15714CFC262321 /* [CP] Check Pods Manifest.lock */ = {
+		3E1093658DD0B775D771FBF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,7 +214,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF436517ECCD3AF45E6E6F51 /* [CP] Embed Pods Frameworks */ = {
+		A5E0AAAFA309AFE261CA1008 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,31 +234,34 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F133C122258897F800658C23 /* Sources */ = {
+		F1891168258B5D4100476EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F133C12E258897F800658C23 /* ViewController.swift in Sources */,
-				F133C12A258897F800658C23 /* AppDelegate.swift in Sources */,
-				F133C12C258897F800658C23 /* SceneDelegate.swift in Sources */,
+				F1891192258B625000476EDD /* BaseViewController.swift in Sources */,
+				F1891174258B5D4100476EDD /* ViewController.swift in Sources */,
+				F1891193258B625000476EDD /* RootViewController.swift in Sources */,
+				F1891170258B5D4100476EDD /* AppDelegate.swift in Sources */,
+				F1891172258B5D4100476EDD /* SceneDelegate.swift in Sources */,
+				F1891194258B625000476EDD /* DemoViewController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F133C12F258897F800658C23 /* Main.storyboard */ = {
+		F1891175258B5D4100476EDD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F133C130258897F800658C23 /* Base */,
+				F1891176258B5D4100476EDD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F133C134258897FA00658C23 /* LaunchScreen.storyboard */ = {
+		F189117A258B5D4100476EDD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F133C135258897FA00658C23 /* Base */,
+				F189117B258B5D4100476EDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -234,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F133C138258897FA00658C23 /* Debug */ = {
+		F189117E258B5D4100476EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -295,7 +330,7 @@
 			};
 			name = Debug;
 		};
-		F133C139258897FA00658C23 /* Release */ = {
+		F189117F258B5D4100476EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -340,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -350,21 +385,19 @@
 			};
 			name = Release;
 		};
-		F133C13B258897FA00658C23 /* Debug */ = {
+		F1891181258B5D4100476EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC0FE7C47C3253B4A6C664C1 /* Pods-DSTextViewDemo.debug.xcconfig */;
+			baseConfigurationReference = 03ED3269A7A1D5257A5F13B8 /* Pods-DSTextViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 3U34V92LTL;
 				INFOPLIST_FILE = DSTextViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.swp.DSTextViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -372,21 +405,19 @@
 			};
 			name = Debug;
 		};
-		F133C13C258897FA00658C23 /* Release */ = {
+		F1891182258B5D4100476EDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C235429FED5F6A40E72086 /* Pods-DSTextViewDemo.release.xcconfig */;
+			baseConfigurationReference = 881B1F0FFD19E77EC09DED2B /* Pods-DSTextViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 3U34V92LTL;
 				INFOPLIST_FILE = DSTextViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dream.swp.DSTextViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -397,25 +428,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F133C121258897F800658C23 /* Build configuration list for PBXProject "DSTextViewDemo" */ = {
+		F1891167258B5D4100476EDD /* Build configuration list for PBXProject "DSTextViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F133C138258897FA00658C23 /* Debug */,
-				F133C139258897FA00658C23 /* Release */,
+				F189117E258B5D4100476EDD /* Debug */,
+				F189117F258B5D4100476EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F133C13A258897FA00658C23 /* Build configuration list for PBXNativeTarget "DSTextViewDemo" */ = {
+		F1891180258B5D4100476EDD /* Build configuration list for PBXNativeTarget "DSTextViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F133C13B258897FA00658C23 /* Debug */,
-				F133C13C258897FA00658C23 /* Release */,
+				F1891181258B5D4100476EDD /* Debug */,
+				F1891182258B5D4100476EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F133C11E258897F800658C23 /* Project object */;
+	rootObject = F1891164258B5D4100476EDD /* Project object */;
 }

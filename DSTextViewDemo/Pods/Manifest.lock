@@ -2,13 +2,16 @@ PODS:
   - DSBase (1.0.1)
   - DSTextView (1.0.0):
     - DSBase
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - DSTextView (from `../`)
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - DSBase
+    - SnapKit
 
 EXTERNAL SOURCES:
   DSTextView:
@@ -16,8 +19,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DSBase: 20e7d49cef125bc7b2225f78b1e269f4ef1594bc
-  DSTextView: 88b36941a22be124b5a0ff344d1c9b0a1a2865e7
+  DSTextView: 67f5c5b0ebac53ffbf8a865e4b61dd0deb882007
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 66ff4f6ff61ea1724352632862c5270abc673cf8
+PODFILE CHECKSUM: ee528069974d46aa551a2b5aa61f2973f7902cf7
 
 COCOAPODS: 1.10.0
