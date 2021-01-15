@@ -24,6 +24,7 @@ open class DSTextView: UITextView {
     // MARK: - Private Property
     private let kHiddenAnimationTime : TimeInterval   = 0.5
     private let kPlaceholderDefaultFontSize : CGFloat = 15.0
+    private var character: NSCharacterSet?
     
     private lazy var placeholderView : UILabel = {
         let label : UILabel = UILabel()
@@ -33,12 +34,21 @@ open class DSTextView: UITextView {
         return label;
     }()
     
+    open override var delegate: UITextViewDelegate? {
+//        self = delegate
+//        set { self }
+//        super.delegate = self
+        set {  super.delegate = self }
+        get { super.delegate }
+//        return super.delegate
+    }
+    
 
     public override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
         config()
     }
-    
+
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         config()
@@ -53,9 +63,10 @@ open class DSTextView: UITextView {
     
     deinit {
         #if DEBUG
-        print("Class = \(Self.Type.self), \(#function)")
+        print("Class = \(type(of: self)), \(#function)")
         #else
         #endif
+        NotificationCenter.default.removeObserver(self, name: UITextView.textDidBeginEditingNotification, object: self)
         NotificationCenter.default.removeObserver(self, name: UITextView.textDidChangeNotification, object: self)
     }
 }
@@ -64,7 +75,10 @@ open class DSTextView: UITextView {
 
 private extension DSTextView {
     
-    func config() -> Void {
+    dynamic func config() -> Void {
+        
+        self.character = NSCharacterSet(charactersIn: "0123456789")
+        
         self.setUpUI()
         self.propertyConfig()
     }
@@ -80,23 +94,25 @@ private extension DSTextView {
     
     func propertyConfig() -> Void {
         self.font = UIFont.systemFont(ofSize: kPlaceholderDefaultFontSize)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidBegin(_:)), name: UITextView.textDidBeginEditingNotification, object: self)
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextView.textDidChangeNotification, object: self)
+    }
+    
+    @objc private func textDidBegin(_ notification : Notification) -> Void {
+        
     }
     
     
     @objc private func textDidChange(_ notification : Notification) -> Void {
-        guard let textView = notification.object as? DSTextView else { return }
-        self.text = textView.text
-        #if DEBUG
-        guard let text = self.text else { return }
-        print(text)
-        #else
-            
-        #endif
+//        guard let textView = notification.object as? DSTextView else { return }
         
-        self.placeholderHidden(text, animate: self.kHiddenAnimationTime)
+        self.text = ""
+        
+        self.placeholderHidden(self.text, animate: self.kHiddenAnimationTime)
     }
     
+    
+
     private func placeholderHidden(_ string : String, animate: TimeInterval) -> Void {
         if self.text.count == 0 {
             if string == "" {
@@ -124,6 +140,10 @@ private extension DSTextView {
         };
     }
     
+
+    
+    
+    
 }
 
 
@@ -135,6 +155,7 @@ public extension DS where DSBase: DSTextView {
     }
     
     var layer: CALayer { self.ds.layer }
+
 }
 
 
@@ -146,3 +167,11 @@ extension DS where DSBase: DSTextView {
 
 
 extension DSTextView: DSCompatible { }
+
+extension DSTextView: UITextViewDelegate {
+    
+    public func textViewDidChange(_ textView: UITextView) {
+        
+    }
+    
+}

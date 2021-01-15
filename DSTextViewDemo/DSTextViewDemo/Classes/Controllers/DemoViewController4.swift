@@ -9,10 +9,18 @@ import UIKit
 
 class DemoViewController4: BaseViewController {
 
+    
+    lazy var customView : CustomView = {
+        let customView = CustomView()
+        return customView;
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        view.addSubview(customView)
     }
     
 

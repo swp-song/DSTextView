@@ -48,5 +48,17 @@ extension DemoViewController1 {
         }
         
         textView.ds.layer.borderWidth = 1
+        textView.delegate = self
+    }
+}
+
+extension DemoViewController1: UITextViewDelegate {
+    
+//    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+//         return false
+//    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+//        @
     }
 }
